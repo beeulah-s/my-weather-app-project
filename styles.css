@@ -134,3 +134,13 @@ i {
   font-size: 36px;
   font-weight: 700;
 }
+
+.coded-by {
+  font-size: 12px;
+  text-align: center;
+  color: hotpink;
+}
+
+p a {
+  color: pink;
+}
