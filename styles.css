@@ -96,7 +96,7 @@ i {
 }
 
 .city {
-  font-size: 68px;
+  font-size: 48px;
   font-weight: 800;
   color: white;
 }
@@ -108,6 +108,10 @@ i {
   color: white;
   font-size: 18px;
   font-weight: 700;
+}
+
+.temp-description {
+  font-size: 20px;
 }
 
 .description {
@@ -131,16 +135,35 @@ i {
 }
 
 .temperature-celcius {
-  font-size: 36px;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+.units {
+  font-size: 16px;
+  color: white;
+  display: inline;
+  position: relative;
+  bottom: 14px;
   font-weight: 700;
 }
 
 .coded-by {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   color: hotpink;
 }
 
 p a {
   color: pink;
+}
+
+.active {
+  color: bisque;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
 }

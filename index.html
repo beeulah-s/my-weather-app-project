@@ -55,11 +55,20 @@
         <div class="row align-items-center">
           <div class="col-5">
             <h2 class="city" id="city-name">Lagos</h2>
-            <p class="temperature-celcius" id="temp-deg-celcius">32°C</p>
+            <div>
+              <strong class="temperature-celcius" id="temp-deg-celcius"
+                >--</strong
+              >
+              <span class="units"
+                ><a href="#" id="celsius-link" class="active">°C</a> |
+                <a href="#" id="fahrenheit-link" class="active-two">°F</a></span
+              >
+            </div>
           </div>
           <div class="col-3">
-            <div class="description" id="temp-description">
-              Sunny<img
+            <div class="description">
+              <span id="temp-description" class="temp-description">Sunny</span
+              ><img
                 src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
                 alt="sunny"
                 id="icon"
