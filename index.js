@@ -29,6 +29,33 @@ let currentDate = document.querySelector("#date-time");
 let now = new Date();
 currentDate.innerHTML = todaysDate(now);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tues", "Wed", "Thurs", "Fri", "Sat"];
+  let forecastHTML = `<div class="row align-items-center">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="col">
+            <p class="day-small">${day}</p>
+            <img
+              src="https://openweathermap.org/img/wn/04d@2x.png"
+              alt=""
+              width="36px"
+            />
+            <p class="temp-small">
+              <span class="weather-forecast-temp-max">32°</span>
+              <span class="weather-forecast-temp-min">12°</span>
+            </p>
+          </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 // city search
 
 let searchButton = document.querySelector("#search-button");
@@ -89,6 +116,8 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
+
+displayForecast();
 
 // current location
 
