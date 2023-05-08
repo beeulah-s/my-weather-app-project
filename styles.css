@@ -130,7 +130,7 @@ i {
 
 .day-small,
 .temp-small {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -166,4 +166,8 @@ p a {
 
 .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.8;
 }
